@@ -1,0 +1,76 @@
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git init
+Reinitialized existing Git repository in E:/Wipro_training1/git-learning-project/.git/
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git add .
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git commit -m "Initial commit"
+[main 05f4d44] Initial commit
+ 2 files changed, 1 deletion(-)
+ delete mode 100644 README.md
+ delete mode 100644 README.md.txt
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git branch -M main
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git remote add origin https://github.com/Yuvanya-Jayasankar/GitAssignment2.git    error: remote origin already exists.
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 1.64 KiB | 335.00 KiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Yuvanya-Jayasankar/GitAssignment2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git checkout -b hotflix-status-fix
+Switched to a new branch 'hotflix-status-fix'
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (hotflix-status-fix)
+$ git add App.txt.txt
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (hotflix-status-fix)
+$ git commit -m "Fix status message in production"
+[hotflix-status-fix ae425d3] Fix status message in production
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (hotflix-status-fix)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git merge hotflix-status-fix
+Updating 05f4d44..ae425d3
+Fast-forward
+ App.txt.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Yuvanya-Jayasankar/GitAssignment2.git
+   05f4d44..ae425d3  main -> main
+
+Yuvanya@LAPTOP-95R4S3E0 MINGW64 /e/Wipro_training1/git-learning-project (main)
+$
