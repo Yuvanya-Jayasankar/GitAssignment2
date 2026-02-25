@@ -1,0 +1,23 @@
+🐞 What is “Bug Fix in Production”?
+    Production = the live version of your application that users are using.
+👉 Bug fix in production means:
+    Fixing a critical issue in the live application without breaking ongoing development.
+🧠 Real-Life Analogy
+         🚗 A car already running on the road
+         Suddenly a brake issue is found
+         You cannot redesign the car
+         You must quickly fix only that issue
+That quick fix = Hotfix
+🔥 Key Rule (Very Important)
+         ❌ Never fix production bugs on feature branches
+         ❌ Never experiment on main
+         ✅ Use a Hotfix branch
+🌿 Branches Involved
+        main        → Production (LIVE)
+        develop     → Ongoing development (optional)
+        hotfix-*    → Emergency bug fix
+🚨 Scenario (Simple Example)
+     App is live (main)
+     Login fails for users ❌
+     Developers are already working on new features
+     You must fix login immediately
